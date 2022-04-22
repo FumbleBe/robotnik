@@ -1,7 +1,7 @@
 ---
 - hosts: 192.168.151.166
   tasks:
-    - name: Install collection community.network
-      community.general.ansible_galaxy_install:
-        type: collection
-        name: community.network
+    - name: Basic deploy of a service
+      community.general.terraform:
+        project_path: '{{ project_dir }}'
+        state: present
