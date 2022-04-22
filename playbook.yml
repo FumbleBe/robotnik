@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: Terraform
   tasks:
     - name: Install collection community.network
       community.general.ansible_galaxy_install:
