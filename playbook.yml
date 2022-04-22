@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: 192.168.151.166
   tasks:
     - name: Install collection community.network
       community.general.ansible_galaxy_install:
